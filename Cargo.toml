@@ -1,0 +1,21 @@
+[package]
+name = "hash-match"
+version = "1.0.1"
+authors = ["Douman <douman@gmx.se>"]
+edition = "2018"
+description = "Optimized pattern matching alternative"
+readme = "README.md"
+repository = "https://github.com/DoumanAsh/hash-match"
+license = "BSL-1.0"
+keywords = ["hash", "match"]
+categories = ["algorithms"]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+]
+
+[dependencies.xxhash-rust]
+version = "0.8.5"
+features = ["const_xxh3", "xxh3"]
